@@ -7,7 +7,7 @@ func printer(input chan string) {
 	fmt.Println(msg)
 }
 
-func main() {
+func hello() {
 	var messages = make(chan string)
 	go printer(messages)
 
