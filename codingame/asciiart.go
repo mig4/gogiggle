@@ -59,11 +59,11 @@ func AsciiArt(glyphDimensions Dimensions, glyphs []string, reqText string, out i
 			glyphOffset = 26 // ? is the last glyph, after all letters
 		}
 		glyphOffsetIx := glyphOffset * glyphDimensions.Width
-		fmt.Fprintf(
-			os.Stderr,
-			"char=%q, offset=%d, index=%d\n",
-			char, glyphOffset, glyphOffsetIx,
-		)
+		// fmt.Fprintf(
+		// 	os.Stderr,
+		// 	"char=%q, offset=%d, index=%d\n",
+		// 	char, glyphOffset, glyphOffsetIx,
+		// )
 		reqGlyphIndices[i] = glyphOffsetIx
 	}
 
